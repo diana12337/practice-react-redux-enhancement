@@ -5,9 +5,9 @@ import { setLogin, getReposFromApi, setFilterInput } from "./github.actions";
 
 const GithubRepos = () => {
   const dispatch = useDispatch();
-  const filterInput = useSelector((state) => state.filterInput);
-  const repos = useSelector((state) => state.repos);
-  const login = useSelector((state) => state.login);
+  const filterInput = useSelector((state) => state.github.filterInput);
+  const repos = useSelector((state) => state.github.repos);
+  const login = useSelector((state) => state.github.login);
   return (
     <section>
       <input

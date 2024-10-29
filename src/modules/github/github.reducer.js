@@ -1,6 +1,6 @@
 const initState = { login: "", filterInput: "", repos: [] };
 
-const reducer = (state = initState, action) => {
+export const reducer = (state = initState, action) => {
   switch (action.type) {
     case "insertRepos":
       console.log(action.payload.repos);
@@ -13,4 +13,4 @@ const reducer = (state = initState, action) => {
       return state;
   }
 };
-export default reducer;
+

@@ -5,9 +5,9 @@ import { setText, getDataFromApi, setFilter } from "./stackoverflow.actions";
 
 const StackoverflowSection = () => {
   const dispatch = useDispatch();
-  const filter = useSelector((state) => state.filter);
-  const data = useSelector((state) => state.data);
-  const text = useSelector((state) => state.text);
+  const filter = useSelector((state) => state.stackoverflow.filter);
+  const data = useSelector((state) => state.stackoverflow.data);
+  const text = useSelector((state) => state.stackoverflow.text);
   return (
     <section>
       <input
