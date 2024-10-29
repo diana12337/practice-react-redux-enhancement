@@ -7,7 +7,8 @@ import {thunk} from "redux-thunk";
 import App from './components/App';
 
 import { Provider } from "react-redux";
-import reducers from './modules/github/github.reducer';
+/* import reducers from './modules/github/github.reducer'; */
+import reducers from './modules/stackoverflow/stackoverflow.reducer';
 
 const store = createStore(reducers, applyMiddleware(thunk));
 
@@ -20,10 +21,3 @@ const store = createStore(reducers, applyMiddleware(thunk));
 );
 
 
-
-
-
-
-
-// const root = createRoot(document.querySelector('#root'));
-// root.render(<App />);
